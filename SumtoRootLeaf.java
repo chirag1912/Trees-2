@@ -15,6 +15,9 @@ class Solution {
             return;
         }
         
+        //Always the base case will be when root ==null can write null when root.left==null and root.right==null;
+        //when you knw the sum to reach on both the ends has been reached;
+        
         if(root.left==null && root.right==null){
             sum=sum+currSum*10+root.val;        //Comes here only when the traverse has reached to the leaf of the tree;
             return;
